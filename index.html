@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Singh | Portfolio</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            scroll-behavior: smooth;
+        }
+        body{
+            /* background-color:rgb(181, 210, 216); */
+            background-color:rgb(227, 227, 227);
+        }
+        .nav1{
+            display: flex;
+            /* background-color: rgb(198, 241, 241); */
+            background-color:rgb(227,215,225);
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 10vh;
+        }
+        #logo{
+            background-color: rgb(198, 108, 198);
+            width:25px;
+            height: 25px;
+            border-radius: 50%;
+            border: none;
+            margin-top: 23px;
+            margin-left: 10px;
+        }
+        #nme{
+            margin-top: 23px;
+            margin-left: 9px;
+        }
+        #h3-1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #first{
+            margin-left: 20px;
+            margin-top: 23px;
+        }
+        #p-1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+        }
+        .nme-1{
+            margin-left: 30rem;
+            margin-top: 23px;
+        }
+        .nme-1 a{
+            text-decoration: none;
+            color:rgb(85, 85, 85);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            margin: 20px;
+        }
+        .nme-1 a:hover{
+            border-bottom: 2px solid black;
+        }
+        #im1{
+            margin-left: 18rem;
+            margin-top: 155px;
+        }
+        #img1{
+            border-radius: 50%;
+            height: 26rem;
+        }
+        #bod-1{
+            display: flex;
+            /* height: 100vh;
+            width: 100%; */
+        }
+        #abt{
+            margin-top:12rem;
+            margin-left: 2rem;
+        }
+        #h1-1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:3rem ;
+            color: black;
+            margin-left: -12rem;
+        }
+        #p-2{
+            font-size: 20px;
+            font-family: sans-serif;
+            margin-top: 7px;
+        }
+        #p-3{
+            width:30rem;
+            font-size: 17px;
+            margin-top: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #btn-1{
+            border: none;
+            background-color:rgb(111, 56, 111);
+            color:rgb(246, 238, 224);
+            height: 6rem;
+            width: 6rem;
+            border-radius: 50%;
+            font-size: 20px;
+            font-family:sans-serif;
+            margin-left: 50rem;
+            margin-top: -4rem;
+        }
+        #btn-2{
+            border: none;
+            background-color: rgb(153, 84, 154);
+            color:rgb(246, 238, 224);
+            height: 6rem;
+            width: 6rem;
+            border-radius: 50%;
+            font-size: 20px;
+            font-family:sans-serif;
+            margin-left: 5rem;
+        }
+        #btn-3{
+            border: none;
+            background-color:rgb(187, 111, 187);
+            color:rgb(246, 238, 224);
+            height: 6rem;
+            width: 6rem;
+            border-radius: 50%;
+            font-size: 20px;
+            margin-left: 5rem;
+            margin-top: -4rem;
+            font-family:sans-serif;
+        }
+        #btn-4{
+            border: none;
+            background-color:rgb(199, 124, 199);
+            color:rgb(246, 238, 224);
+            height: 6rem;
+            width: 6rem;
+            border-radius: 50%;
+            font-size: 20px;
+            margin-left: 5rem;
+            font-family:sans-serif;
+        }
+        .dv{
+            display: flex;
+        }
+        #bod-2{
+            /* background: rgb(195, 143, 143); */
+            background-color:rgb(227, 227, 227);
+            margin-top: 3.6rem;
+            height: 100vh;
+            width: 100%;
+        }
+        #bod-2{
+            display: flex;
+        }
+        #bod-3{
+            background-color:rgb(227, 227, 227);
+            /* margin-top: 3.6rem; */
+            height: 100vh;
+            width: 100%;
+            /* align-items: center; */
+            /* line-height: 1.2; */
+        }
+        #bod-4{
+            /* background: rgb(167, 14, 14); */
+            background-color:rgb(227, 227, 227);
+            /* margin-top: 3.6rem; */
+            height: 100vh;
+            width: 100%;
+        }
+        #bod-5{
+            /* background: rgb(103, 14, 167); */
+            background-color:rgb(227, 227, 227);
+            /* margin-top: 3.6rem; */
+            height: 100vh;
+            width: 100%;
+        }
+        #sp-1{
+            background-color:rgb(227, 227, 227);
+            height: 100px;
+            margin-top: 14rem;
+            margin-left: 6rem;
+            width: 50rem;
+        }
+        #bod2-h1{
+            color: rgb(125, 101, 101);
+            font-size: 50px;
+            margin-right: 30rem;
+        }
+        #p-4{
+            margin-top: 30px;
+            font-size: 25px;
+            color: rgb(70, 61, 47);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #sp-2{
+            background-color:rgb(220, 200, 221);
+            height: 30rem;
+            margin-top: 10rem;
+            margin-left: 50px;
+            width: 30rem;
+            /* background-image: url(aayush.png); */
+        }
+        img{
+            margin-top: 9px;
+            margin-left: 40px;
+            height: 29rem;
+            width: 25rem;
+        }
+        /* #sp-1{
+            border: 5px solid rgb(199, 90, 211);
+            color: rgb(27, 25, 16);
+            height: 35rem;
+            width: 50%;
+            margin-left: 40px;
+            margin-right: 50px;
+            margin-top: 110px;
+            border-radius: 10%;
+            background-color:rgb(132, 107, 133) ;
+        }
+        #sp-2{
+            border: 5px solid rgb(150, 90, 157);
+            height: 35rem;
+            width: 50%;
+            margin-left: 50px;
+            margin-right:40px;
+            margin-top: 110px;
+            border-radius: 10%;
+        }
+        #bod2-h1{
+            text-decoration:underline;
+            text-align: center;
+            padding-top: 20px;
+            font-size: xx-large;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #bod2-h1-1{
+            text-decoration: underline;
+            text-align: center;
+            padding-top: 20px;
+            font-size: xx-large;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        } */
+        .vl {
+        border-left: 6px solid rgb(56, 47, 47);
+        height: 550px;
+        margin-top: 110px;
+        }
+        /* #p-4{
+            font-size:22px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-top: 10px;
+        } */
+        .schedule {
+            height: 32rem;
+            max-width: 600px;
+            margin: 10px auto;
+            padding: 30px;
+            background-color: #c0a6c4;
+            border-radius: 10px;
+            box-shadow: 0px 10px 10px 10px rgb(24, 23, 60);
+        }
+
+        h1 {
+            text-align: center;
+            color: #e6e6e6;
+            margin-bottom: 20px;
+        }
+
+        .schedule h2 {
+            text-align: center;
+            color: #151151;
+            margin-bottom: 20px;
+            font-size: 30px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+        .event {
+            margin-bottom: 30px;
+            border-left: 6px solid rgb(24, 23, 60);
+            padding: 15px;
+            background-color: #ebdde9;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .event:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .event h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .event p {
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .event strong {
+            color: #555;
+        } 
+        #schedule1{
+            background-color: rgb(227, 227, 227);
+            width: 50rem;
+            height: 5rem;
+            margin-left: 20rem;
+        }
+        .s3{
+            background-color: rgb(227, 227, 227);
+            height: 5rem;
+            width: 10rem;;
+        }
+        #sp-3{
+            background-color: rgb(227, 227, 227);
+            margin-top: 30px;
+            width: 10rem;
+            height: 3rem;
+        }
+        #ski{
+            font-size: 40px;
+            font-family: monospace;
+            color: rgb(41, 36, 27);
+            text-decoration:underline;
+            margin-left: 100px;
+        }
+        #met{
+            display: flex;
+        }
+        #mh1{
+            color: black;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            margin-left: 100px;
+            margin-top: 80px;
+        }
+        #met1{
+            height: 60px;
+            width: 300px;
+        }
+        #out{
+            height: 5rem;
+            width: 100%;
+            background-color:rgb(227, 227, 227);
+        }
+        #outreach{
+            display: flex;
+            background-color: #c6c2c6;
+            height: 32rem;
+            width: 60%;
+            margin-top: 45px;
+            margin-left: 300px;
+            border-radius: 20px;
+            padding-top: 14px;
+        }
+        #detail{
+            /* background-color: #333; */
+            height: 30rem;
+            width: 20rem;
+            margin-left: -60px;
+            padding-top: 25px;
+        }
+        #add{
+            /* background-color: #d03333; */
+            height: 8rem;
+            width: 15rem;
+            margin-left: 41px;
+            padding-top: 25px;
+        }
+        #phone{
+            /* background-color: aqua; */
+            height: 8rem;
+            width: 15rem;
+            margin-left: 41px;
+            padding-top: 25px;
+        }
+        #mail{
+            /* background-color: rgb(122, 83, 83); */
+            height: 8rem;
+            width: 15rem;
+            margin-left: 41px;
+            padding-top: 25px;
+        }
+        #adds{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 80px;
+            margin-top: 7px; 
+        }
+        .adds{
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 85px;
+            margin-top:5px;
+        }
+        #phones{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 86px;
+            margin-top: 7px;
+        }
+        .phones{
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 63px;
+            margin-top:5px;
+        }
+        #mails{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 90px;
+            margin-top: 7px;
+        }
+        .mails{
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 60px;
+            margin-top:5px;
+        }
+        i{
+            margin-left: 100px;
+            font-size: 25px;
+        }
+        .lv {
+            border-left: 6px solid rgb(42, 29, 45);
+            height: 25rem;
+            margin-top: 43px;
+            margin-left: -60px;
+        }
+        #mes{
+            /* background-color: #151151; */
+            height: 31rem;
+            width:70%;
+            margin-left: 30px;
+        }
+        #mesh1{
+            font-size: 30px;
+            font-weight: 200;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+            margin-left: -22rem;
+            margin-top: 10px;
+        }
+        .s1{
+            height: 40px;
+            width: 32rem;
+            border-radius: 8px;
+        }
+        #s1{
+            height: 180px;
+            width: 32rem;
+            border-radius: 8px;
+        }
+        #s2{
+            height: 35px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 15px;
+            background-color: rgb(246, 231, 248);
+            color:rgb(17, 16, 16);
+            font-weight: bolder;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .up{
+            background-color:#bfbed7;
+            width: 3%;
+            height: 6%;
+            margin-left: 90rem;
+            margin-top: -30px;
+            border-radius: 8px;
+        }
+        #upi{
+            margin-left: 13px;
+            margin-top: 8px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<header>
+    <nav class="nav1">
+        <span><button id="logo"></button></span>
+        <span id="nme">
+            <h3 id="h3-1">Aayush Singh</h3>
+        </span>
+        <span id="first">
+            <p id="p-1">Software Engineer</p>
+        </span>
+        <div class="nme-1">
+            <a href="#">Home</a>
+            <a href="#bod-2">Personal</a>
+            <a href="#bod-3">Education</a>
+            <!-- <a href="#bod-4">Skills</a> -->
+            <a href="#bod-5">Outreach</a>
+        </div>
+    </nav>
+</header>
+<body>
+    <div id="bod-1">
+        <div id="im1">
+            <img id="img1" src="img-1.png">
+        </div>
+        <div id="abt">
+            <h1 id="h1-1">Aayush Singh</h1>
+            <p id="p-2"><b>A Bit About Me</b></p>
+            <p id="p-3">I am a mentor, I have been tutoring since 2 years,I have great grasping skills, as well am an aspiring individual in the field of web development,currently in the early stage of learning HTML,CSS,Javascript. </p>
+        </div>
+    </div>
+    <div class="dv">
+        <button id="btn-1">Resume</button>
+        <button id="btn-2">Outreach</button>
+        <a href="#bod-2"><button id="btn-3">Personal</button></a>
+        <button id="btn-4">Works</button>
+    </div>
+    <section id="bod-2">
+        <!-- <div id="sp-1">
+            <h1 id="bod2-h1">About Me</h1>
+            <p id="p-4">* I'm a frontend web developer with a passion for creating user-friendly websites.
+                <br>* I have keen knowledge in HTML and CSS, I specialize in turning design concepts into fully functional web pages that engage and delight users.
+                <br>* One of my key strengths is my ability to quickly grasp new concepts and technologies.
+                <br>* Besides my technical skills, I also enjoy sharing my knowledge and mentoring others.
+                <br>* Whether it's pair programming, code reviews, or mentoring sessions, I'm always eager to contribute to a supportive and collaborative work environment.</p>
+            <p id="p-4">* If you're looking for a frontend developer,
+                <br> who is passionate about creating user-friendly websites and enjoys sharing knowledge with others,
+                <br> then I'd love to connect and discuss how I can contribute to your projects and team.</p>
+
+        </div>
+        <div class="vl"></div>
+        <div id="sp-2">
+            <h1 id="bod2-h1-1">Skills</h1>
+            <meter id="met" value="50"  min="0" max="100"></meter>
+        </div> -->
+        <div id="sp-1">
+            <h1 id="bod2-h1">So, who am I?</h1>
+            <p id="p-4">I'm a frontend web developer with a passion for creating user-friendly websites. I have keen knowledge in HTML and CSS, I specialize in turning design concepts into fully functional web pages that engage and delight users. One of my key strengths is my ability to quickly grasp new concepts and technologies. Besides my technical skills, I also enjoy sharing my knowledge and mentoring others.  Whether it's pair programming, code reviews, or mentoring sessions, I'm always eager to contribute to a supportive and collaborative work environment.</p>
+        </div>
+        <div id="sp-2">
+            <img src="/img-2.png">
+        </div>
+    </section>
+    <section id="bod-3">
+        <div id="schedule1"></div>
+        <div class="schedule">
+            <h2>Education</h2>
+            
+            <div class="event">
+                <h3>Parul University</h3>
+                <p><strong>Course: </strong>BTech-Computer Science Engineering</p>
+                <p><strong>CGPA:</strong> 8.30 (5 Semesters)</p>
+                <p><strong>Year:</strong> 2021(July)-Present</p>
+            </div>
+        
+            <div class="event">
+                <h3>Sarvajanik Vidhyalay</h3>
+                <p><strong>Course:</strong> HSC</p>
+                <p><strong>Percentage:</strong> 80%</p>
+                <p><strong>Year:</strong> 2021</p>
+            </div>
+        
+            <div class="event">
+                <h3>Holy Trinity High School</h3>
+                <p><strong>Course:</strong> SSC</p>
+                <p><strong>Percentage:</strong> 82%</p>
+                <p><strong>Year:</strong> 2019</p>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="bod-4">
+        <div class="s3"></div>
+        <div id="sp-3">
+            <h1 id="ski">Skills</h1>
+        </div>
+        <div id="met">
+            <h1 id="mh1">Web Development</h1>
+            <br>
+            <meter id="met1" value="30" min="0" max="100" ></meter>
+        </div>
+    </section> -->
+    <section id="bod-5">
+        <div id="out"></div>
+        <div id="outreach">
+            <div id="detail">
+                <div id="add">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p id="adds">Address</p>
+                    <p class="adds">Vadodara</p>
+                    <p class="adds">Gujarat</p>
+                </div>
+                <div id="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p id="phones">Phone</p>
+                    <p class="phones">+91 9979502587</p>
+                    <p class="phones">+026 125489625</p>
+                </div>
+                <div id="mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p id="mails">Email</p>
+                    <p class="mails">aayushs@gmail.com</p>
+                </div>
+            </div>
+            <div class="lv"></div>
+            <div id="mes">
+                <h1 id="mesh1">Send Message</h1>
+                <form id="send">
+                    <input class="s1" type="text" placeholder=" Enter Your Name"><br>
+                    <br>
+                    <input class="s1" type="email" placeholder=" Enter Your email"><br>
+                    <br>
+                    <textarea id="s1" placeholder="Enter your message" rows="4" cols="50"></textarea>
+                    <!-- <input id="s1" type="message-box" placeholder="Enter Your Message"><br> -->
+                    <br>
+                    <input id="s2" type="submit" placeholder="Send Now">
+                </form>
+                
+            </div>
+        </div>
+        <a href="#bod-1">
+        <div class="up">
+            <i id="upi" class="fa-solid fa-arrow-up"></i>
+        </div>
+        </a>
+        
+    </section>
+    
+    
+</body>
+</html>
